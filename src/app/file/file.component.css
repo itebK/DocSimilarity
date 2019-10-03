@@ -1,0 +1,20 @@
+.fileStyle {
+    width: 8%;
+    float: left;
+    margin-left: 2%;
+    cursor: pointer;
+    color: black;
+}
+
+.fileStyle span {
+    color: blue;
+}
+
+.fileStyle p {
+    color: black;
+    font-weight: bold;
+}
+
+.fileStyle:hover p {
+    color: blue;
+}
