@@ -6,15 +6,21 @@ import { FilesComponent } from './files/files.component';
 import { FileComponent } from './file/file.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FileContentComponent } from './file-content/file-content.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     FilesComponent,
-    FileComponent
+    FileComponent,
+    FileContentComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    PdfViewerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

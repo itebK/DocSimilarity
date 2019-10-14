@@ -1,8 +1,11 @@
-<div class="fileStyle">
+<!-- <div class="fileStyle" (click)="viewSinglePdf()">
     <span>
         <i class="fas fa-file-pdf fa-3x"></i>
         <br>
         <p>{{fileName}}</p>
     </span>
-
-</div>
+</div> -->
+<li (click)="viewSinglePdf()">
+    {{fileName}}
+    <hr class="hr">
+</li>

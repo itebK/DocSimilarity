@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FilesService } from '../services/files.service';
+
 
 @Component({
   selector: 'app-file',
@@ -6,11 +8,17 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./file.component.css']
 })
 export class FileComponent implements OnInit {
-  @Input() fileName: string;
+  @Input() fileName = "1310.4546.pdf";
 
-  constructor() { }
+
+  constructor(private fs: FilesService) { }
+
 
   ngOnInit() {
+
+  }
+  viewSinglePdf() {
+    this.fs.getFileByName(this.fileName);
   }
 
 }

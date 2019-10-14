@@ -1,0 +1,11 @@
+.linkAnnotation{
+    transform: matrix(1.33333, 0, 0, 1.33333, 0, 0);
+    transform-origin: -447.084px -556.644px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red!important;
+    left: 447.084px;
+    top: 556.644px;
+    width: 9.952px;
+    height: 6.952px;
+}
